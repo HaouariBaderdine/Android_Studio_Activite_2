@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstName" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:layout_span="2"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastName" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:layout_span="2"
+            android:autofillHints="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_span="2"
+            android:autofillHints="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bn_retrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="retrieveSampleData"
+            android:text="@string/retrieve"
+           />
+
+        <Button
+            android:id="@+id/bn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="postData"
+            android:text="@string/post"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/bn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearControls"
+            android:text="@string/clear"
+            tools:ignore="ButtonStyle" />
+
+    </TableRow>
+
+</TableLayout>

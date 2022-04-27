@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Activite_2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="firstName">Prénom</string>
+    <string name="lastName">Nom</string>
+    <string name="email">Email</string>
+    <string name="retrieve">Récupérer</string>
+    <string name="post">Ajouter</string>
+    <string name="clear">Effacer</string>
+</resources>
